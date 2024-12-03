@@ -12,7 +12,9 @@
             --secondary-color: #2ecc71;
             --background-color: white;
             --text-color: #2c3e50;
-            --skill-color: #e74c3c; /* Single color for all skills */
+
+            /* Skill Colors */
+            --skill-color: #2980b9; /* Single color for all skills */
         }
 
         * {
@@ -98,7 +100,6 @@
         #skills li {
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
-            background-color: var(--skill-color); /* Consistent color */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             font-size: 1.2rem;
             color: white;
@@ -107,6 +108,10 @@
 
         #skills li:hover {
             transform: scale(1.05);
+        }
+
+        #skills li {
+            background-color: var(--skill-color); /* Apply the single color to all skills */
         }
 
         #contact a {
@@ -156,7 +161,7 @@
             <li>🤖 Machine Learning</li>
             <li>🔍 Deep Learning</li>
             <li>📚 NLP (Hugging Face)</li>
-            <li>🧮 AI Agents ,RAG Applications (langchain, langgraph and others )</li>
+            <li>🧮 AI Agents (langchain, langgraph)</li>
             <li>🔥 PyTorch</li>
             <li>📊 Scikit-learn</li>
             <li>🐳 Docker</li>
