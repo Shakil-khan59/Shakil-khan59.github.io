@@ -12,18 +12,7 @@
             --secondary-color: #2ecc71;
             --background-color: white;
             --text-color: #2c3e50;
-
-            /* Skill Colors */
-            --skill-color-1: #e74c3c;
-            --skill-color-2: #8e44ad;
-            --skill-color-3: #f1c40f;
-            --skill-color-4: #e67e22;
-            --skill-color-5: #1abc9c;
-            --skill-color-6: #2980b9;
-            --skill-color-7: #d35400;
-            --skill-color-8: #16a085;
-            --skill-color-9: #2c3e50;
-            --skill-color-10: #27ae60;
+            --skill-color: #e74c3c; /* Single color for all skills */
         }
 
         * {
@@ -109,6 +98,7 @@
         #skills li {
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
+            background-color: var(--skill-color); /* Consistent color */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             font-size: 1.2rem;
             color: white;
@@ -118,17 +108,6 @@
         #skills li:hover {
             transform: scale(1.05);
         }
-
-        #skills li:nth-child(1) { background-color: var(--skill-color-1); }
-        #skills li:nth-child(2) { background-color: var(--skill-color-2); }
-        #skills li:nth-child(3) { background-color: var(--skill-color-3); }
-        #skills li:nth-child(4) { background-color: var(--skill-color-4); }
-        #skills li:nth-child(5) { background-color: var(--skill-color-5); }
-        #skills li:nth-child(6) { background-color: var(--skill-color-6); }
-        #skills li:nth-child(7) { background-color: var(--skill-color-7); }
-        #skills li:nth-child(8) { background-color: var(--skill-color-8); }
-        #skills li:nth-child(9) { background-color: var(--skill-color-9); }
-        #skills li:nth-child(10) { background-color: var(--skill-color-10); }
 
         #contact a {
             color: var(--primary-color);
@@ -177,7 +156,7 @@
             <li>🤖 Machine Learning</li>
             <li>🔍 Deep Learning</li>
             <li>📚 NLP (Hugging Face)</li>
-            <li>🧮 AI Agents (langchain, langgraph)</li>
+            <li>🧮 AI Agents ,RAG Applications (langchain, langgraph and others )</li>
             <li>🔥 PyTorch</li>
             <li>📊 Scikit-learn</li>
             <li>🐳 Docker</li>
