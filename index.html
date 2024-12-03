@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shakil Khan, a Machine Learning Enthusiast and CSE student at RUET.">
     <title>Shakil Khan - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -11,6 +12,18 @@
             --secondary-color: #2ecc71;
             --background-color: white;
             --text-color: #2c3e50;
+
+            /* Skill Colors */
+            --skill-color-1: #e74c3c;
+            --skill-color-2: #8e44ad;
+            --skill-color-3: #f1c40f;
+            --skill-color-4: #e67e22;
+            --skill-color-5: #1abc9c;
+            --skill-color-6: #2980b9;
+            --skill-color-7: #d35400;
+            --skill-color-8: #16a085;
+            --skill-color-9: #2c3e50;
+            --skill-color-10: #27ae60;
         }
 
         * {
@@ -90,20 +103,32 @@
             flex-wrap: wrap;
             gap: 1rem;
             list-style: none;
+            padding: 0;
         }
 
         #skills li {
-            background-color: var(--secondary-color);
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
             font-size: 1.2rem;
+            color: white;
+            transition: transform 0.3s ease;
         }
 
         #skills li:hover {
             transform: scale(1.05);
         }
+
+        #skills li:nth-child(1) { background-color: var(--skill-color-1); }
+        #skills li:nth-child(2) { background-color: var(--skill-color-2); }
+        #skills li:nth-child(3) { background-color: var(--skill-color-3); }
+        #skills li:nth-child(4) { background-color: var(--skill-color-4); }
+        #skills li:nth-child(5) { background-color: var(--skill-color-5); }
+        #skills li:nth-child(6) { background-color: var(--skill-color-6); }
+        #skills li:nth-child(7) { background-color: var(--skill-color-7); }
+        #skills li:nth-child(8) { background-color: var(--skill-color-8); }
+        #skills li:nth-child(9) { background-color: var(--skill-color-9); }
+        #skills li:nth-child(10) { background-color: var(--skill-color-10); }
 
         #contact a {
             color: var(--primary-color);
@@ -121,7 +146,7 @@
             background-color: var(--text-color);
             color: white;
             text-align: center;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
         }
     </style>
 </head>
@@ -143,7 +168,7 @@
 
     <section id="about" class="section container">
         <h2>About Me</h2>
-        <p>👨‍💻 I am a 4th-semester CSE student at RUET passionate about Machine Learning, Deep Learning, and AI. I enjoy building AI-powered applications and deploying scalable solutions using Docker and Kubernetes.</p>
+        <p>👨‍💻 I am a 4th-semester CSE student at RUET with a deep passion for Machine Learning, Deep Learning, and Artificial Intelligence. My interests lie in exploring cutting-edge algorithms, developing innovative AI-powered applications, and solving real-world problems using data-driven approaches. I enjoy transforming complex ideas into functional, scalable solutions through tools like Docker and Kubernetes. Beyond just building models, I am enthusiastic about optimizing deployment strategies, ensuring robustness, and maintaining efficient workflows. I am continuously learning, experimenting with the latest technologies, and contributing to open-source projects, all while staying committed to pushing the boundaries of AI innovation.</p>
     </section>
 
     <section id="skills" class="section container">
@@ -152,12 +177,13 @@
             <li>🤖 Machine Learning</li>
             <li>🔍 Deep Learning</li>
             <li>📚 NLP (Hugging Face)</li>
+            <li>🧮 AI Agents (langchain, langgraph)</li>
             <li>🔥 PyTorch</li>
             <li>📊 Scikit-learn</li>
             <li>🐳 Docker</li>
             <li>☸️ Kubernetes</li>
-            <li>📈 Mlflow</li>
-            <li>🧮 Data Preprocessing (Numpy, Pandas, Matplotlib, Seaborn)</li>
+            <li>📈 MLflow</li>
+            <li>📊 Data Preprocessing (Numpy, Pandas, Matplotlib, Seaborn)</li>
         </ul>
     </section>
 
@@ -165,8 +191,8 @@
         <h2>Contact</h2>
         <p>📬 Connect with me:</p>
         <div>
-            <a href="https://github.com/shakilkhan24" target="_blank">GitHub</a>
-            <a href="https://hub.docker.com/u/shakilkhan24" target="_blank">Docker Hub</a>
+            <a href="https://github.com/shakilkhan24" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://hub.docker.com/u/shakilkhan24" target="_blank" rel="noopener noreferrer">Docker Hub</a>
         </div>
     </section>
 
